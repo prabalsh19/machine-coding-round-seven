@@ -10,9 +10,10 @@ export const Country = () => {
     <>
       <h2>Top Countries in {selectedContinent?.name} for your next holiday</h2>
       <div className="card-wrapper">
-        {selectedContinent?.countries.map((countries) => (
-          <Card key={id} {...countries} link={"cities"} />
-        ))}
+        {selectedContinent?.countries.map((countries) => {
+          console.log(countries);
+          return <Card key={id} {...countries} link={"cities"} />;
+        })}
       </div>
     </>
   );
