@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Card.css";
 export const Card = ({ id, image, name, link }) => {
   return (
-    <Link to={`${link}/${id}`}>
+    <Link to={`/${link}/${id}`}>
       <div className="card">
         <img src={image} alt="" />
 
